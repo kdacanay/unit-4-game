@@ -1,36 +1,36 @@
 #main-title {
-    font-family: 'Anton', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 .rules-text {
-    font-family: 'Anton', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 .col {
-    font-family: 'Anton', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 #totalScore {
-    font-family: 'Anton', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
-#red-button {
+#red-crystal {
     background-image: url(../images/ruby.jpeg);
     background-size: cover; 
     width: 100%;
     height: 100%;
 }
-#blue-button {
+#blue-crystal {
     background-image: url(../images/blue-diamond.jpeg);
     background-size: cover;
     width: 100%;
     height: 100%;
     background-position: top;
 }
-#yellow-button {
+#yellow-crystal {
     background-image: url(../images/yellowsapphire.jpeg);
     background-size: cover;
     width: 100%;
     height: 100%;
 }
-#green-button {
+#green-crystal {
     background-image: url(../images/emerald.jpeg);
     background-size: cover;
     width: 100%;
