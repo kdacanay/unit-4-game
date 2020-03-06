@@ -31,6 +31,17 @@ var emeraldPoints = " ";
 //calls start Game function
 startGame();
 
+//function for starting game: display random winningScore, sets all player totals to 0, chooses
+//random points for gems to be added to scoreDisplay
+function startGame() {
+    winningScore = generateWinningScore(75, 150);
+    updateWinningScore();
+    updateTotalScore();
+    updateWinsTotal();
+    updateLossesTotal();
+    crystalPoints(1, 12);
+    totalScore = 0;
+}
 
 //function to generate winningScore 
 function generateWinningScore(min, max) {
@@ -50,7 +61,7 @@ function updateWinsTotal() {
 }
 //function to display lossesTotal
 function updateLossesTotal() {
-    document.getElementById("lossesTotal").innerHtml = "Losses: " + lossesTotal;
+    document.getElementById("lossesTotal").innerHTML = "Losses: " + lossesTotal;
 }
 function compare() {
     updateTotalScore();
@@ -64,17 +75,6 @@ function compare() {
         updateLossesTotal();
         startGame();
     }
-}
-//function for starting game: display random winningScore, sets all player totals to 0, chooses
-//random points for gems to be added to scoreDisplay
-function startGame() {
-    winningScore = generateWinningScore(75, 150);
-    updateWinningScore();
-    updateTotalScore();
-    updateWinsTotal();
-    updateLossesTotal();
-    crystalPoints(1, 12);
-    totalScore = 0;
 }
 
 //functions to set up values of crystals, random values from 1 to 12 to each crystal

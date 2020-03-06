@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Anton|Josefin+Sans&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
     <link type="text/css" rel="stylesheet" href="assets/css/reset.css" />
     <title>Crystals Collector!</title>
@@ -19,6 +19,7 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="display-4" id="main-title">Crystals Collector!</h1>
+            <br>
             <p class="rules-text">You will be given a random number at the start of the game.
                 <br>
                 <br>
@@ -52,26 +53,28 @@
             <div class="row">
                 <div class="col">
                     <button type="button" onclick="rubyButton()" class="btn btn-primary btn-lg"
-                        id="red-crystal">Ruby</button>
+                        id="red-crystal">RUBY</button>
                 </div>
                 <div class="col">
                     <button type="button" onclick="diamondButton()" class="btn btn-primary btn-lg"
-                        id="blue-crystal">Diamond</button>
+                        id="blue-crystal">DIAMOND</button>
                 </div>
                 <div class="col">
                     <button type="button" onclick="sapphireButton()" class="btn btn-primary btn-lg"
-                        id="yellow-crystal">Sapphire</button>
+                        id="yellow-crystal">SAPPHIRE</button>
                 </div>
                 <div class="col">
                     <button type="button" onclick="emeraldButton()" class="btn btn-primary btn-lg"
-                        id="green-crystal">Emerald</button>
+                        id="green-crystal">EMERALD</button>
                 </div>
             </div>
         </div>
+        <br>
+        <br>
         <div class="container">
             <div class="row">
                 <div class="col"></div>
-                <div class="card border-primary mb-3" style="max-width: 18rem;">
+                <div id="card-wrap" class="card border-primary mb-3" style="max-width: 18rem;">
                     <div class="card-header">Your Total Score Is:</div>
                     <div class="card-body text-primary">
                         <div id="totalScore"></div>
