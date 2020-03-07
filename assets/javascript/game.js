@@ -86,6 +86,7 @@ function crystalPoints(min, max) {
     diamondPoints = Math.floor(Math.random() * (max - min + 1) + min);
     sapphirePoints = Math.floor(Math.random() * (max - min + 1) + min);
     emeraldPoints = Math.floor(Math.random() * (max - min + 1) + min);
+    //logs each gem value to console during each round
     console.log("Ruby: " + rubyPoints + ", Diamond: " + diamondPoints + ", Sapphire: " + sapphirePoints + ", Emerald: " + emeraldPoints);
 }
 
@@ -96,7 +97,7 @@ $(document).ready(function() {
         compare();
     });
     $("#blue-crystal").on("click", function() {
-        totalScore = totalScore + rubyPoints;
+        totalScore = totalScore + diamondPoints;
         compare();
     });
     $("#yellow-crystal").on("click", function() {
