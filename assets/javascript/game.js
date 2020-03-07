@@ -68,11 +68,14 @@ function compare() {
     if (totalScore === winningScore) {
         winsTotal++;
         updateWinsTotal();
+        alert("You win!");
         startGame();
+        
     }
     if (totalScore > winningScore) {
         lossesTotal++;
         updateLossesTotal();
+        alert("You lose!");
         startGame();
     }
 }
@@ -86,23 +89,24 @@ function crystalPoints(min, max) {
     console.log("Ruby: " + rubyPoints + ", Diamond: " + diamondPoints + ", Sapphire: " + sapphirePoints + ", Emerald: " + emeraldPoints);
 }
 
-function rubyButton() {
-    totalScore = totalScore + rubyPoints;
-    compare();
-}
+//jquery for on click events/button clicks
+$(document).ready(function() {
+    $("#red-crystal").on("click", function()  {
+        totalScore = totalScore + rubyPoints;
+        compare();
+    });
+    $("#blue-crystal").on("click", function() {
+        totalScore = totalScore + rubyPoints;
+        compare();
+    });
+    $("#yellow-crystal").on("click", function() {
+        totalScore = totalScore + sapphirePoints;
+        compare();
+    });
+    $("#green-crystal").on("click", function() {
+        totalScore = totalScore + emeraldPoints;
+        compare();
+    });
+});
 
-function diamondButton() {
-    totalScore = totalScore + diamondPoints;
-    compare();
-}
-
-function sapphireButton() {
-    totalScore = totalScore + sapphirePoints;
-    compare();
-}
-
-function emeraldButton() {
-    totalScore = totalScore + emeraldPoints;
-    compare();
-}
 
